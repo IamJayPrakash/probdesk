@@ -1,9 +1,8 @@
-import React from "react";
-
 const UserList = () => {
   return (
-    <div>
-      <p>User List</p>
+    <div className="bg-background-light dark:bg-background-dark p-4">
+      <h2 className="text-text-light dark:text-text-dark">User List</h2>
+      {/* Add user list content here */}
     </div>
   );
 };

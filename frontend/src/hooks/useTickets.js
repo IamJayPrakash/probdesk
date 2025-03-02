@@ -1,14 +1,17 @@
-import { useState, useEffect } from "react";
-import { getTickets } from "../services/ticketService";
+import { useState, useEffect } from 'react';
+import api from '../services/api';
 
-const useTickets = () => {
+export const useTickets = () => {
   const [tickets, setTickets] = useState([]);
 
   useEffect(() => {
-    getTickets().then(setTickets);
+    const fetchTickets = async () => {
+      const response = await api.get('/tickets');
+      setTickets(response.data);
+    };
+
+    fetchTickets();
   }, []);
 
   return tickets;
 };
-
-export default useTickets;

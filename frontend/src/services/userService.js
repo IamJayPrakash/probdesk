@@ -1,11 +1,11 @@
-import api from "./api";
+import api from './api';
 
 export const getUsers = async () => {
-  const response = await api.get("/users");
+  const response = await api.get('/users');
   return response.data;
 };
 
-export const getUser = async (id) => {
-  const response = await api.get(`/users/${id}`);
+export const getUser = async (userId) => {
+  const response = await api.get(`/users/${userId}`);
   return response.data;
 };

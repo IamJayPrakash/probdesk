@@ -1,18 +1,9 @@
-import React from "react";
-
 const TicketForm = () => {
   return (
-    <form>
-      <label>
-        Title:
-        <input type="text" name="title" />
-      </label>
-      <label>
-        Description:
-        <textarea name="description"></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
+    <div className="bg-background-light dark:bg-background-dark p-4">
+      <h2 className="text-text-light dark:text-text-dark">Ticket Form</h2>
+      {/* Add ticket form content here */}
+    </div>
   );
 };
 

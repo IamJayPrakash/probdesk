@@ -1,11 +1,11 @@
-import api from "./api";
+import api from './api';
 
 export const getTickets = async () => {
-  const response = await api.get("/tickets");
+  const response = await api.get('/tickets');
   return response.data;
 };
 
-export const createTicket = async (data) => {
-  const response = await api.post("/tickets", data);
+export const createTicket = async (ticketData) => {
+  const response = await api.post('/tickets', ticketData);
   return response.data;
 };

@@ -1,9 +1,8 @@
-import React from "react";
-
 const TicketCard = () => {
   return (
-    <div>
-      <p>Ticket Card</p>
+    <div className="bg-background-light dark:bg-background-dark p-4">
+      <h2 className="text-text-light dark:text-text-dark">Ticket Card</h2>
+      {/* Add ticket card content here */}
     </div>
   );
 };
