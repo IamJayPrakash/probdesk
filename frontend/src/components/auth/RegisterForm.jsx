@@ -1,18 +1,21 @@
 import { useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 import { useNotification } from '../../hooks/useNotifications';
+import { useRouter } from 'next/router';
 
 const RegisterForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { register } = useAuth();
   const { notify } = useNotification();
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await register({ email, password });
       notify('Registration successful');
+      router.push('/login');
     } catch (error) {
       notify('Registration failed');
     }

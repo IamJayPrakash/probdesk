@@ -1,18 +1,21 @@
 import { useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 import { useNotification } from '../../hooks/useNotifications';
+import { useRouter } from 'next/router';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { login } = useAuth();
   const { notify } = useNotification();
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await login({ email, password });
       notify('Login successful');
+      router.push('/dashboard');
     } catch (error) {
       notify('Login failed');
     }

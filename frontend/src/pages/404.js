@@ -1,18 +1,17 @@
 import React from 'react';
-import RegisterForm from '../components/auth/RegisterForm';
-import Header from '../components/common/Header';
+import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 
-const Register = () => {
+const NotFound = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Navbar />
       <main className="flex-1 flex items-center justify-center p-4">
-        <RegisterForm />
+        <h1 className="text-4xl text-center text-text-light dark:text-text-dark">404 - Page Not Found</h1>
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Register;
+export default NotFound;
