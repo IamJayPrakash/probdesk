@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import '../styles/globals.css';
 import AuthProvider from '../contexts/AuthContext';
 import NotificationProvider from '../contexts/NotificationContext';
 import ThemeProvider from '../contexts/ThemeContext';

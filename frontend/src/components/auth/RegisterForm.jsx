@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useAuth } from '../../contexts/AuthContext';
-import { useNotification } from '../../contexts/NotificationContext';
+import useAuth from '../../hooks/useAuth';
+import { useNotification } from '../../hooks/useNotifications';
 
 const RegisterForm = () => {
   const [email, setEmail] = useState('');

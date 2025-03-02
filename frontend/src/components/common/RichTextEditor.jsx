@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 // Dynamically import ReactQuill to avoid SSR issues
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
-const EditorExample = () => {
+const RichTextEditor = () => {
   const [value, setValue] = useState("");
 
   useEffect(() => {
@@ -18,4 +18,4 @@ const EditorExample = () => {
   );
 };
 
-export default EditorExample;
+export default RichTextEditor;

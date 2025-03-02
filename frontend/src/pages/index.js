@@ -1,6 +1,6 @@
 import React from "react";
-import FormExample from "../components/FormExample";
-import EditorExample from "../components/EditorExample";
+import FormExample from "../components/common/FormExample";
+import EditorExample from "../components/common/RichTextEditor";
 
 const Home = () => {
   return (
