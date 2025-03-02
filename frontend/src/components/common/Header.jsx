@@ -1,9 +1,9 @@
 import React from 'react';
 import ThemeToggle from './ThemeToggle';
-import { useAuth } from '../../hooks/useAuth';
+import useAuth from '../../hooks/useAuth'; // ✅ Fix import
 
 const Header = () => {
-  const { user, logout } = useAuth();
+  const { user, logout } = useAuth(); // ✅ Now correctly using useAuth.js
 
   return (
     <header className="bg-primary-light dark:bg-primary-dark p-4 flex justify-between items-center">

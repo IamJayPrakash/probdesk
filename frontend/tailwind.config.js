@@ -1,23 +1,29 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // Enable dark mode support
+  darkMode: "class", // Ensures dark mode toggling works
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./contexts/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
         primary: {
-          light: '#4f46e5', // Light mode primary color
-          dark: '#3b82f6', // Dark mode primary color
+          light: "#4f46e5",
+          dark: "#3b82f6",
         },
         secondary: {
-          light: '#fbbf24', // Light mode secondary color
-          dark: '#f59e0b', // Dark mode secondary color
+          light: "#fbbf24",
+          dark: "#f59e0b",
         },
         background: {
-          light: '#ffffff', // Light mode background color
-          dark: '#1f2937', // Dark mode background color
+          light: "#ffffff",
+          dark: "#1f2937",
         },
         text: {
-          light: '#1f2937', // Light mode text color
-          dark: '#ffffff', // Dark mode text color
+          light: "#1f2937",
+          dark: "#ffffff",
         },
       },
     },

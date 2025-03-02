@@ -32,4 +32,4 @@ const useAuth = () => {
   };
 };
 
-export default useAuth;
+export default useAuth; // ✅ Keep as default export
