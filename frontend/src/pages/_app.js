@@ -9,7 +9,10 @@ function MyApp({ Component, pageProps }) {
     <AuthProvider>
       <NotificationProvider>
         <ThemeProvider>
-          <MetaData title="JIRA Clone" description="Manage your projects efficiently with our JIRA clone." />
+          <MetaData
+            title="ProbDesk"
+            description="Manage your projects efficiently with our JIRA clone."
+          />
           <Component {...pageProps} />
         </ThemeProvider>
       </NotificationProvider>
